@@ -3,3 +3,20 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.arrow {
+  animation: pulse 2s ease 0s infinite normal none;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
