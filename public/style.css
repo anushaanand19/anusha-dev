@@ -1,3 +1,8 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
 .portfolio-img {
   height: 260px;
   background-size: cover;
@@ -18,5 +23,11 @@
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
   }
 }
